@@ -1,40 +1,140 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 <head>
-<!-- UnitedKingdomOfMoopsioid -->
-<title>United Kingdom of Moopsioid News</title>
- <style>
-body {
-Font-family: ‘Courier New’, Courier, monospace;
- }
-</style>
+  <!-- UnitedKingdomOfMoopsioid -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United Kingdom of Moopsioid News</title>
+  <style>
+    :root {
+      --ink: #111827;
+      --muted: #4b5563;
+      --paper: #f9fafb;
+      --card: #ffffff;
+      --line: #e5e7eb;
+      --accent: #ca8a04;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      line-height: 1.7;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    header {
+      padding: 56px 24px 40px;
+      text-align: center;
+      background: var(--ink);
+      color: #fff;
+      border-bottom: 6px solid var(--accent);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 5vw, 2.75rem);
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: #d1d5db;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .news-button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 24px;
+      background: var(--ink);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: background 0.2s ease;
+    }
+
+    .news-button:hover,
+    .news-button:focus-visible {
+      background: #374151;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
 <body>
-<h1>United Kingdom of Moopsioid</h1>
-<div id=”introduction”>
-<h2>About Moops</h2>
-<br><p>Moops is a country that has its own currency, and military. This country is governed by a president and 4 other higher-ups: Vice President, Secretary, Treasurer, and Secretary of Commerce.</p>
-<h3>Military</h3>
-<p>The leader or fleet admiral of the army is Hunter. The military is having a war against the Muzz clan (Turkish for banana.)</p>
-<h3>Treasury</h3>
-<p>The treasury hasn’t been able to give people pay-day via cash, because it is a long and grueling process neither the Treasurer or Vice President wants to do. The treasury is currently at 120k moops only because of the 2 mooper (20k) and the 10 mooper (100k.) There are now credit cards in the United Kingdom of Moopsioid which has been a great addition to Moops because of how easy it is to transfer currency - there are 4 different types of credit cards: Yellow, Red, Blue, and White. All of them have a different interest rate, and have a different way of earning them.</p>
-<h3>Friday News:</h3>
-<a
-  href="https://vpofmoops.github.io/Moops-news/"
-  target="_blank"
-  rel="noopener noreferrer"
-  style="
-    display: inline-block;
-    padding: 12px 24px;
-    background: #111827;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-  "
->
-  Friday News
-</a>
+  <header>
+    <h1>United Kingdom of Moopsioid</h1>
+    <p>Official news and information</p>
+  </header>
+
+  <main>
+    <section id="introduction">
+      <h2>About Moops</h2>
+      <p>Moops is a country that has its own currency and military. It is governed by a President and four other high-ranking officials: the Vice President, Secretary, Treasurer, and Secretary of Commerce.</p>
+    </section>
+
+    <section id="military">
+      <h3>Military</h3>
+      <p>The leader of the army, or Fleet Admiral, is Hunter. The military is currently at war with the Muzz clan (Turkish for banana).</p>
+    </section>
+
+    <section id="treasury">
+      <h3>Treasury</h3>
+      <p>The treasury hasn’t been able to give people pay-day in cash, because it is a long and grueling process that neither the Treasurer nor the Vice President wants to do. The treasury currently holds 120k moops, thanks to the 2 mooper (20k) and the 10 mooper (100k).</p>
+      <p style="margin-top: 12px;">Credit cards are now available in the United Kingdom of Moopsioid, which has been a great addition because they make transferring currency so easy. There are four types of credit cards: Yellow, Red, Blue, and White. Each has a different interest rate and a different way of earning it.</p>
+    </section>
+
+    <section id="friday-news">
+      <h3>Friday News</h3>
+      <p>Catch up on the latest weekly news from Moops.</p>
+      <a class="news-button" href="https://vpofmoops.github.io/Moops-news/" target="_blank" rel="noopener noreferrer">Read Friday News</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; United Kingdom of Moopsioid
+  </footer>
 </body>
 </html>
